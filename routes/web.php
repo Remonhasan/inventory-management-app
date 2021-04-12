@@ -15,10 +15,14 @@ use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\CategoryController;
 use \App\Http\Controllers\BrandController;
 use \App\Http\Controllers\SizeController;
+use \App\Http\Controllers\GoogleController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle']);
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
