@@ -23,9 +23,10 @@
                 <div class="col-lg-12">
                     <div class="card card-primary card-outline">
                         <div class="card-header">
-                            <h5 class="m-0">All Categories</h5> </br>
-                            <a href="{{route('category.create')}}" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add Category</a></br></br>
+                            <h5 class="m-0">All Categories</h5> <br>
+                            <a href="{{route('category.create')}}" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Add Category</a><br><br>
                         </div>
+
                         <div class="card-body">
                             <!-- form start -->
                           <table class="table table-bordered datatable">

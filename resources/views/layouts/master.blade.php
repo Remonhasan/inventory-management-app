@@ -15,15 +15,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     @include('layouts.Partials.sidebar')
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <!-- /.content-header -->
-
-        <!-- Main content -->
-        <div class="content">
+    <div class="content-wrapper" id="app">
             @yield('content')
-        </div>
-        <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
 
